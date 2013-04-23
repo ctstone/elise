@@ -130,6 +130,7 @@
     <Content Include="img\endurance.jpg" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\instagram.png" />
     <Content Include="img\mosaic1.jpg" />
     <Content Include="img\mosaic2.jpg" />
     <Content Include="img\mosaic3.jpg" />
@@ -168,7 +169,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\_LayoutPage.cshtml" />
+    <Content Include="Views\Shared\_LayoutFull.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Services\Index.cshtml" />
@@ -178,6 +179,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Community\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutPage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_LayoutMini.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Home\Test.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
