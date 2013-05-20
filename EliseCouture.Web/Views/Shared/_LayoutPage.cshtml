@@ -1,18 +1,25 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title>@ViewBag.Title | Amory Fitness</title>
+        <title>@ViewBag.Title - Amory Fitness</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href='http://fonts.googleapis.com/css?family=Questrial|News+Cycle|Pompiere|PT+Sans|Poiret+One|PT+Sans+Narrow|Josefin+Sans|Open+Sans+Condensed:300|Raleway|Forum|Buda:300|Dorsa' rel='stylesheet' type='text/css'>
         <style type="text/css">
         #my-thumbs img {
           margin-bottom:1px;
+        }
+        h1 {
+            font-size:23px;
+            font-weight:normal;
+        }
+        h1 small {
+            font-size:21px;
         }
         a { color: #2B4E72; }
         body { background:#ccc; }
     
         .masthead {
-            /*height:350px;*/
             position:relative;
             padding-bottom:40%;
             overflow:hidden;
@@ -67,16 +74,19 @@
     <body>
         <div style="padding:1em 0 .5em 0;background:#B1C27E;font-size:1.3em;border:solid black; border-width:0 0 1px 0; box-shadow: inset 0 -3px 6px rgba(0,0,0,.2)">
             <div style="max-width:940px;margin:auto;">
-                <div class="row-fluid" >
-                    <div class="span8">
+                <div class="row-fluid" style="">
+                    <div class="span8" style="padding-top:70px;">
                         <ul class="unstyled inline" style="margin:0;">
-                            <li style="padding-left:0;">@Html.ActionLink("about", "index", "home")</li>
+                            <li style="padding-left:0;">@Html.ActionLink("home", "index", "home")</li>
                             <li><a href="#">@Html.ActionLink("services", "index", "services")</a></li>
                             <li><a href="#">@Html.ActionLink("blog", "index", "blog")</a></li>
                             <li><a href="#">@Html.ActionLink("community", "index", "community")</a></li>
                         </ul>
                     </div>
-                    <div class="span4" style="text-align:right;font-size:1.5em;">AMORY FITNESS</div>
+                    <div class="span4" style="text-align:right;font-size:3em;color:#eee;font-family: 'Josefin Sans', sans-serif;padding-bottom:.25em;">
+                        <div style="line-height:40px;">AMORY</div>
+                        <div style="line-height:40px;">FITNESS</div>
+                    </div>
                 </div>
             </div>
         </div>
