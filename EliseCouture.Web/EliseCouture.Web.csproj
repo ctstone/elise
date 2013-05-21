@@ -121,10 +121,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="css\bootstrap-responsive.css" />
-    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css.bak\bootstrap-responsive.css" />
+    <Content Include="css.bak\bootstrap-responsive.min.css" />
+    <Content Include="css.bak\bootstrap.css" />
+    <Content Include="css.bak\bootstrap.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\style.css" />
     <Content Include="Global.asax" />
     <Content Include="img\elise-old.jpg" />
     <Content Include="img\endurance.jpg" />
@@ -203,7 +206,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>17521</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:12728/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
