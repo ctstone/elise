@@ -121,10 +121,6 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="css.bak\bootstrap-responsive.css" />
-    <Content Include="css.bak\bootstrap-responsive.min.css" />
-    <Content Include="css.bak\bootstrap.css" />
-    <Content Include="css.bak\bootstrap.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\style.css" />
@@ -145,9 +141,15 @@
     <Content Include="img\mosaic7.jpg" />
     <Content Include="img\mosaic8.jpg" />
     <Content Include="img\mosaic9.jpg" />
+    <Content Include="img\mosaic\1.jpg" />
+    <Content Include="img\mosaic\2.jpg" />
+    <Content Include="img\mosaic\3.jpg" />
+    <Content Include="img\mosaic\4.jpg" />
+    <Content Include="img\mosaic\5.jpg" />
+    <Content Include="img\mosaic\6.jpg" />
+    <Content Include="img\mosaic\7.jpg" />
     <Content Include="img\nutrition.jpg" />
     <Content Include="img\strength.jpg" />
-    <Content Include="img\strength2.jpg" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\holder.js" />
@@ -197,6 +199,16 @@
   <ItemGroup>
     <Content Include="font\fontello.eot" />
     <Content Include="font\fontello.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Users\Chris\SkyDrive\Code\ctstone\ctstone.OAuth\ctstone.OAuth\ctstone.OAuth.csproj">
+      <Project>{97cfc934-ee2c-496c-b2cc-76e868c50a2b}</Project>
+      <Name>ctstone.OAuth</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Users\Chris\SkyDrive\Code\ctstone\ctstone.Tumblr\ctstone.Tumblr\ctstone.Tumblr.csproj">
+      <Project>{30cfe441-f382-4afd-bb8c-71687ff9e624}</Project>
+      <Name>ctstone.Tumblr</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

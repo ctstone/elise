@@ -67,3 +67,52 @@ p {
 h3 {
     color:#383838;
 }
+
+#logo {
+    margin-bottom:-20px;
+}
+
+#elise-photo {
+    max-width:150px;
+}
+
+@media screen and (max-width:500px) {
+    * {
+        text-align:left;
+    }
+    .row-fluid .offset1:first-child,
+    .row-fluid .offset2:first-child,
+    .row-fluid .offset3:first-child,
+    .row-fluid .offset4:first-child,
+    .row-fluid .offset5:first-child,
+    .row-fluid .offset6:first-child,
+    .row-fluid .offset7:first-child,
+    .row-fluid .offset8:first-child,
+    .row-fluid .offset9:first-child,
+    .row-fluid .offset10:first-child,
+    .row-fluid .offset11:first-child {
+        margin:auto;
+    }
+
+    .row-fluid .span1,
+    .row-fluid .span2,
+    .row-fluid .span3,
+    .row-fluid .span4,
+    .row-fluid .span5,
+    .row-fluid .span6,
+    .row-fluid .span7,
+    .row-fluid .span8,
+    .row-fluid .span9,
+    .row-fluid .span10,
+    .row-fluid .span11,
+    .row-fluid .span12 {
+        display: block;
+        float:none;
+        width:100%;
+        margin:auto;
+    }
+
+    #logo {
+        margin-bottom:10px;
+    }
+}

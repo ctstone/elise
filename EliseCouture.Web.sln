@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EliseCouture.Web", "EliseCouture.Web\EliseCouture.Web.csproj", "{AEFCFF42-1EB5-4326-89EE-4EAA043350DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ctstone.Json", "..\..\..\Users\Chris\SkyDrive\Code\ctstone\ctstone.Json\ctstone.Json\ctstone.Json.csproj", "{A3635E1A-2CB6-469D-A8E9-79207A40DC92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ctstone.OAuth", "..\..\..\Users\Chris\SkyDrive\Code\ctstone\ctstone.OAuth\ctstone.OAuth\ctstone.OAuth.csproj", "{97CFC934-EE2C-496C-B2CC-76E868C50A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ctstone.Tumblr", "..\..\..\Users\Chris\SkyDrive\Code\ctstone\ctstone.Tumblr\ctstone.Tumblr\ctstone.Tumblr.csproj", "{30CFE441-F382-4AFD-BB8C-71687FF9E624}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{AEFCFF42-1EB5-4326-89EE-4EAA043350DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEFCFF42-1EB5-4326-89EE-4EAA043350DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEFCFF42-1EB5-4326-89EE-4EAA043350DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3635E1A-2CB6-469D-A8E9-79207A40DC92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3635E1A-2CB6-469D-A8E9-79207A40DC92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3635E1A-2CB6-469D-A8E9-79207A40DC92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3635E1A-2CB6-469D-A8E9-79207A40DC92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CFC934-EE2C-496C-B2CC-76E868C50A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CFC934-EE2C-496C-B2CC-76E868C50A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CFC934-EE2C-496C-B2CC-76E868C50A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CFC934-EE2C-496C-B2CC-76E868C50A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30CFE441-F382-4AFD-BB8C-71687FF9E624}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30CFE441-F382-4AFD-BB8C-71687FF9E624}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30CFE441-F382-4AFD-BB8C-71687FF9E624}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30CFE441-F382-4AFD-BB8C-71687FF9E624}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
