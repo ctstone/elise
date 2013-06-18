@@ -3,121 +3,23 @@
     <head>
         <title>@ViewBag.Title - Amory Fitness</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="/css/bootstrap.css" rel="stylesheet" media="screen">
         <link href="/css/style.css" rel="stylesheet" media="screen">
-        <!--<link href='http://fonts.googleapis.com/css?family=Questrial|News+Cycle|Pompiere|PT+Sans|Poiret+One|PT+Sans+Narrow|Josefin+Sans|Open+Sans+Condensed:300|Raleway|Forum|Buda:300|Dorsa' rel='stylesheet' type='text/css'>-->
         <link href="http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico" rel="stylesheet" type="text/css">
-        <style type="text/css">
-        @@font-face {
-	        font-family: "fontello";
-	        src: url("/font/fontello.eot?11995952");
-	        src: url("/font/fontello.eot?11995952#iefix") format('embedded-opentype'), url("/font/fontello.woff?11995952") format('woff'), url("/font/fontello.ttf?11995952") format('truetype'), url("/font/fontello.svg?11995952#fontello") format('svg');
-	        font-weight: normal;
-	        font-style: normal;
-        }
-
-        .icon-facebook,
-        .icon-twitter,
-        .icon-pinterest,
-        .icon-instagram {
-            font-family: 'fontello';
-            margin-right:.5em;
-        }
-
-        .icon {
-            width:20px;
-            height:20px;
-            text-align:center;
-            display:inline-block;
-            color:black;
-        }
-        .icon-facebook:hover {
-            color:#3b5998;
-        }
-        .icon-twitter:hover {
-            color:lightblue;
-        }
-        .icon-pinterest:hover {
-            color:red;
-        }
-        .icon-instagram:hover {
-            color:saddlebrown;
-        }
-
-
-        #my-thumbs img {
-          margin-bottom:1px;
-        }
-        a { color: #2B4E72; }
-        body { background:#ccc; }
-    
-        .masthead {
-            position:relative;
-            padding-bottom:40%;
-            overflow:hidden;
-        }
-        .masthead .imgs {
-            position:absolute;
-            left:0;right:0;
-            top:0;bottom:0;
-        }
-        .masthead .img {
-            width:20%;
-            height:50%;
-            background-size: 100% 100%;
-            position:absolute;
-        }
-        .masthead .img.c2 {
-            left:20%;
-            width:40%;
-            height:100%;
-        }
-        .masthead .img.c3 {
-            left:60%;
-        }
-        .masthead .img.c4 {
-            left:80%;
-        }
-        .masthead .img.r2 {
-            top:50%;
-        }
-
-        .masthead.small {
-            padding-bottom:20%;
-        }
-        .masthead.small .img {
-            height:100%;
-            width:20%;
-        }
-        .masthead.small .img.c2 {
-            left:20%;
-        }
-        .masthead.small .img.c3 {
-            left:40%;
-        }
-        .masthead.small .img.c4 {
-            left:60%;
-        }
-        .masthead.small .img.c5 {
-            left:80%;
-        }
-
-        
-        </style>
     </head>
     <body>
         <div style="padding:1em 0 .5em 0;background:#B1C27E;font-size:1.3em;border:solid black; border-width:0 0 1px 0; box-shadow: inset 0 -3px 6px rgba(0,0,0,.2)">
             <div style="max-width:940px;margin:auto;">
                 <div id="logo" style="line-height:40px;font-size:3em;color:#eee;font-family: 'Josefin Sans', sans-serif;">
-                    AMORY<br />FITNESS
+                    <a href="/">AMORY<br />FITNESS</a>
                 </div>
                     
                 <div style="text-align:right;">
                     <ul class="unstyled inline" style="margin:0;">
-                        <li>@Html.ActionLink("home", "index", "home")</li>
-                        <li><a href="#">@Html.ActionLink("services", "index", "services")</a></li>
-                        <li><a href="#">@Html.ActionLink("blog", "index", "blog")</a></li>
-                        <li><a href="#">@Html.ActionLink("community", "index", "community")</a></li>
+                        <li>@Html.ActionLink("services", "index", "services")</li>
+                        <li>@Html.ActionLink("blog", "index", "blog")</li>
+                        <li>@Html.ActionLink("community", "index", "community")</li>
+                        <li>@Html.ActionLink("contact", "index", "contact")</li>
                     </ul>
                 </div>
             </div>
@@ -127,7 +29,6 @@
     
         <script src="http://code.jquery.com/jquery.js"></script>
         <script src="/js/bootstrap.min.js"></script>
-        <script src="/js/holder.js"></script>
         <script>
             (function (i, s, o, g, r, a, m) {
                 i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {

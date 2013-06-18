@@ -14,6 +14,8 @@ namespace EliseCouture.Web.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            ViewBag.EmailValid = true;
+            ViewBag.MessageValid = true;
             return View();
         }
 
@@ -31,6 +33,8 @@ namespace EliseCouture.Web.Controllers
                     return RedirectToAction("received");
                 }
             }
+            ViewBag.EmailValid = ModelState.IsValidField("Email");
+            ViewBag.MessageValid = ModelState.IsValidField("Message");
             return View(contact);
         }
 

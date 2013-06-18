@@ -5,40 +5,27 @@
     Layout = "~/Views/Shared/_LayoutMini.cshtml";
 }
 
-<style type="text/css">
-    label {
-        font-weight:bold;
-    }
-    input,
-    textarea {
-        font-size:1.3em;
-        width:100%;
-        padding:.25em;
-    }
-    textarea {
-        height:275px;
-    }
-</style>
-
-<div class="row-fluid">
-    <div class="offset3 span5">
-    @using (Html.BeginForm())
-    {
-        <div>@Html.LabelFor(x => x.Email)</div>
-        <div style="margin-bottom:1em;">
-            @Html.TextBoxFor(x => x.Email)
-            <span style="color:darkred;">@Html.ValidationMessageFor(x => x.Email)</span>
+@using (Html.BeginForm("index", "contact", FormMethod.Post, new { @class="form-horizontal" }))
+{
+    <div class="control-group @(ViewBag.EmailValid ? String.Empty : "error")">
+        @Html.LabelFor(x => x.Email, new { @class="control-label" })
+        <div class="controls">
+            @Html.TextBoxFor(x => x.Email, new { @class="span5", placeholder="email" })
+            <span class="help-inline">@Html.ValidationMessageFor(x => x.Email)</span>
         </div>
-    
-        <div>@Html.LabelFor(x => x.Message)</div>
-        <div style="margin-bottom:1em;">
-            @Html.TextAreaFor(x => x.Message)
-            <span style="color:darkred;">@Html.ValidationMessageFor(x => x.Message)</span>
-        </div>
-    
-        <div>
-            <input type="submit" value="send" />
-        </div>
-    }
     </div>
-</div>
+
+    <div class="control-group @(ViewBag.MessageValid ? String.Empty : "error")">
+        @Html.LabelFor(x => x.Message, new { @class="control-label" })
+        <div class="controls">
+            @Html.TextAreaFor(x => x.Message, new { @class="span5", placeholder="comments", rows="5" })
+            <span class="help-inline">@Html.ValidationMessageFor(x => x.Message)</span>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <div class="controls">
+            <button class="btn" type="submit"><i class="icon-envelope"></i> Send</button>
+        </div>
+    </div>
+}
