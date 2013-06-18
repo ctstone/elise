@@ -1,5 +1,4 @@
-﻿using ctstone.Tumblr;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,9 +17,10 @@ namespace EliseCouture.Web.Controllers
             string authorizedTokenSecret = "yaUwgDzoJFUh7bGp2jnAhvp1MgZekN8bCMBnPvBfWDlhIYy1uX";
             string blog = "pedalboston.tumblr.com";
 
-            TumblrClient tumblr = new TumblrClient(ClientKey, ClientSecret, String.Empty, authorizedToken, authorizedTokenSecret);
-
-            return View(tumblr.Blog.GetPosts(blog).response.posts);
+            //TumblrClient tumblr = new TumblrClient(ClientKey, ClientSecret, String.Empty, authorizedToken, authorizedTokenSecret);
+            //return View(tumblr.Blog.GetPosts(blog).response.posts);
+            
+            return View();
         }
     }
 }
