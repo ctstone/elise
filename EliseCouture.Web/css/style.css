@@ -177,8 +177,8 @@ body { background:#ccc; }
         text-align:left;
     }
 
-    .row-fluid [class^="offset"],
-    .row-fluid [class*=" offset"] {
+    .row-fluid [class^="offset"]:first-child,
+    .row-fluid [class*=" offset"]:first-child {
         margin:auto;
     }
 
