@@ -1,14 +1,21 @@
-﻿@{ Layout = "_LayoutPage.cshtml"; }
+﻿@{ 
+    Layout = "_LayoutPage.cshtml";
+    ViewBag.Image1 = ViewBag.Image1 ?? "/img/mosaic8.jpg";
+    ViewBag.Image2 = ViewBag.Image2 ?? "/img/strength.jpg";
+    ViewBag.Image3 = ViewBag.Image3 ?? "/img/mosaic1.jpg";
+    ViewBag.Image4 = ViewBag.Image4 ?? "/img/endurance.jpg";
+    ViewBag.Image5 = ViewBag.Image5 ?? "/img/mosaic3.jpg";
+}
 
 <div style="background:#383838;">
     <div style="max-width:940px;margin:auto;">
         <div class="masthead small">
             <div class="imgs">
-                <div class="img" style="background-image:url('/img/mosaic8.jpg');"></div>
-                <div class="img c2" style="background-image:url('/img/mosaic3.jpg');"></div>
-                <div class="img c3" style="background-image:url('/img/mosaic1.jpg');"></div>
-                <div class="img c4" style="background-image:url('/img/mosaic4.jpg');"></div>
-                <div class="img c5" style="background-image:url('/img/mosaic5.jpg');"></div>
+                <div class="img" style="background-image:url('@ViewBag.Image1');"></div>
+                <div class="img c2" style="background-image:url('@ViewBag.Image2');"></div>
+                <div class="img c3" style="background-image:url('@ViewBag.Image3');"></div>
+                <div class="img c4" style="background-image:url('@ViewBag.Image4');"></div>
+                <div class="img c5" style="background-image:url('@ViewBag.Image5');"></div>
             </div>
         </div>
     </div>
