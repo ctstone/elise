@@ -8,14 +8,14 @@
         <link href="http://fonts.googleapis.com/css?family=Josefin+Sans|Pacifico" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div style="padding:1em 0 .5em 0;background:#B1C27E;font-size:1.3em;border:solid black; border-width:0 0 1px 0; box-shadow: inset 0 -3px 6px rgba(0,0,0,.2)">
-            <div style="max-width:940px;margin:auto;">
-                <div id="logo" style="line-height:40px;font-size:3em;color:#eee;font-family: 'Josefin Sans', sans-serif;">
+        <div id="header" style="">
+            <div class="content">
+                <div id="logo">
                     <a href="/">AMORY<br />FITNESS</a>
                 </div>
                     
-                <div style="text-align:right;">
-                    <ul class="unstyled inline" style="margin:0;">
+                <div id="sections">
+                    <ul class="unstyled inline">
                         <li>@Html.ActionLink("services", "index", "services")</li>
                         <li>@Html.ActionLink("blog", "index", "blog")</li>
                         <li>@Html.ActionLink("community", "index", "community")</li>
