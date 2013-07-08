@@ -1,10 +1,10 @@
 ﻿@{ 
     Layout = "_LayoutPage.cshtml";
-    ViewBag.Image1 = ViewBag.Image1 ?? "/img/food/food-basket.jpg";
-    ViewBag.Image2 = ViewBag.Image2 ?? "/img/food/water-bottle.jpg";
-    ViewBag.Image3 = ViewBag.Image3 ?? "/img/food/green-heart.jpg";
-    ViewBag.Image4 = ViewBag.Image4 ?? "/img/food/breakfast.jpg";
-    ViewBag.Image5 = ViewBag.Image5 ?? "/img/food/tea.jpg";
+    ViewBag.Image1 = ViewBag.Image1 ?? Url.Content("~/img/food/food-basket.jpg");
+    ViewBag.Image2 = ViewBag.Image2 ?? Url.Content("~/img/food/water-bottle.jpg");
+    ViewBag.Image3 = ViewBag.Image3 ?? Url.Content("~/img/food/green-heart.jpg");
+    ViewBag.Image4 = ViewBag.Image4 ?? Url.Content("~/img/food/breakfast.jpg");
+    ViewBag.Image5 = ViewBag.Image5 ?? Url.Content("~/img/food/tea.jpg");
 }
 
 <div style="background:#383838;">
